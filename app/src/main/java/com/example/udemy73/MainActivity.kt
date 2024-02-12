@@ -61,7 +61,7 @@ fun UnitConverter(){
     var iExpanded by remember { mutableStateOf(false)} //dropdown stays closed on the input
     var oExpanded by remember { mutableStateOf(false)} //same but for the dropdown output
     val conversionFactor = remember { mutableStateOf(1.00)}
-    val oconversionFactor = remember { mutableStateOf(1.00) }
+    val oconversionFactor = remember { mutableStateOf(1.00)}
 
     fun ConvertUnits(){
         val inputValueDouble = inputValue.toDoubleOrNull() ?: 0.0
